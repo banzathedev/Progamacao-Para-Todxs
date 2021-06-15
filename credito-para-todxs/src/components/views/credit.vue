@@ -1,5 +1,6 @@
 <template>
-  <h1> home ta up </h1>
+  <h1> credito pessoal funcionando 
+  </h1>
 </template>
 
 <script>

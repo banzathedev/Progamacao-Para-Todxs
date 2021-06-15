@@ -1,13 +1,20 @@
 <template>
-    <v-toolbar dense >
-        <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat>Link One</v-btn>
-      <v-btn flat>Link Two</v-btn>
-      <v-btn flat>Link Three</v-btn>
-    </v-toolbar-items>
 
-    </v-toolbar>
+<v-toolbar color="deep-purple lighten-1" >
+  <v-icon mdi-home-circle></v-icon>
+    <v-toolbar-title>Titulo da pagina</v-toolbar-title>
+   
+    <v-spacer></v-spacer>
+
+    <v-toolbar-items >
+      <v-btn flat class="amber lighten-4" to="/Credito-Pessoal">Crédito pessoal</v-btn>
+      <v-btn flat class="amber lighten-4">Link Two</v-btn>
+      <v-btn flat class="amber lighten-4">Link Three</v-btn>
+    </v-toolbar-items>
+  </v-toolbar>
+ 
 </template>
+
 
 <script>
 export default {

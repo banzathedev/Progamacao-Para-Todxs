@@ -2,15 +2,18 @@
   <v-app>
     <v-main>
     <Header />
+    <v-container>
       <router-view />
+    </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import header from './components/header.vue';
+import Header from "./components/template/header.vue"
+
 export default {
-  components: { header },
+  components: { Header },
   name: "App",
 
 };
