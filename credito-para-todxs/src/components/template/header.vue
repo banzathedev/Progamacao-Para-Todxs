@@ -8,8 +8,8 @@
 
     <v-toolbar-items >
       <v-btn flat class="amber lighten-4" to="/Credito-Pessoal">Crédito pessoal</v-btn>
-      <v-btn flat class="amber lighten-4">Link Two</v-btn>
-      <v-btn flat class="amber lighten-4">Link Three</v-btn>
+      <v-btn flat class="amber lighten-4">Sobre</v-btn>
+      <v-btn flat class="amber lighten-4"></v-btn>
     </v-toolbar-items>
   </v-toolbar>
  
