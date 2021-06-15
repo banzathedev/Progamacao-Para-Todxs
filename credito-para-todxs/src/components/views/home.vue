@@ -1,13 +1,10 @@
 <template>
-  <h1> home ta pegando </h1>
+  <h1>home ta pegando</h1>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>

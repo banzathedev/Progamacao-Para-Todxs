@@ -1,10 +1,13 @@
 <template>
-  <h1>credito pessoal funcionando</h1>
+  <h1> about pegando </h1>
 </template>
 
 <script>
-export default {};
+export default {
+
+}
 </script>
 
 <style>
+
 </style>
