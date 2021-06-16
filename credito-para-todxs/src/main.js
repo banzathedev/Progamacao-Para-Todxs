@@ -9,7 +9,7 @@ import Header from "./components/template/header.vue"
 Vue.config.productionTip = false;
 
 Vue.filter('dinheiro', valor => {
-	return `R$ ${parseFloat(valor).toFixed(2,)}`.replace('.', ',')
+	return `R$ ${parseFloat(valor).toFixed(2)}`.replace('.', ',')
 })
 
 new Vue({

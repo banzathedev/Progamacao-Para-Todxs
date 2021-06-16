@@ -1,38 +1,36 @@
 <template>
-<div>
-  
-  <v-card>
-    <table>
+<div class="templates ">
+  <v-card class="elevation-2">
+    <v-card-title class="display-1 titles"> Clique no emprestimo de interesse</v-card-title>
+    <v-card-text class="">
+  <v-simple-table v-ripple height="300px">
+    <template v-slot:default>
                 <thead>
                     <tr>
-                        <th>Propostas</th>
-                        <th>Emprestimo</th>
-                        <th>Parcelas</th>
-                        <th>juros(%)</th>
-                        <th>Valor da Parcelas</th>
+                        <th class="text-h6">Propostas</th>
+                        <th class="text-h6">Emprestimo</th>
+                        <th class="text-h6">Parcelas</th>
+                        <th class="text-h6">juros(%)</th>
+                        <th class="text-h6" >Valor da Parcelas</th>
 
                     </tr>
                 </thead>
                 <tbody>
+                  
                     <tr v-for="proposals in  proposalGet" :key="proposals.name">
-                        <td>{{ proposals.name }}</td>
-                        <td>{{ proposals.valorEmprestimo }}</td>
-                        <td>{{ proposals.parcelas }}</td>
-                        <td>{{ proposals.juros }}</td>
-                        <td>{{ proposals.valorEmprestimo / proposals.parcelas + (proposals.valorEmprestimo * proposals.juros) | dinheiro }}</td>
+                        <td class="text-body-1">{{ proposals.name }}</td>
+                        <td class="text-body-1">{{ proposals.valorEmprestimo | dinheiro }}</td>
+                        <td class="text-body-1">{{ proposals.parcelas }}</td>
+                        <td class="text-body-1">{{ proposals.juros * 100 }} %</td>
+                        <td class="text-body-1">{{ proposals.valorEmprestimo / proposals.parcelas + (proposals.valorEmprestimo * proposals.juros) | dinheiro }}</td>
                         
                     </tr>
-                    
                 </tbody>
-            </table>
+          
+    </template>
+  </v-simple-table>
+        </v-card-text>
   </v-card>
-  <!-- <v-data-table
-    :headers="headers"
-    :items="proposals"
-    :items-per-page="5"
-    class="elevation-1"
-  ></v-data-table > -->
-  <v-btn>ta aqui so por enquanto </v-btn>
   </div>
 </template>
 
@@ -40,28 +38,7 @@
 import { mapGetters } from 'vuex'
 
 
-export default {
-   
-  //  data(){ 
-  //    return { 
-       
-       
-  //      headers: [
-  //         {
-  //           text: 'Propostas: ',
-  //           align: 'start',
-  //           sortable: false,
-  //           value: 'name',
-  //         },
-  //         { text: 'Emprestimo', value: 'emprestimos' },
-  //         { text: 'Parcelas', value: 'parcelas' },
-  //         { text: 'Juros ao mes (%)', value: 'juros' },
-  //         { text: 'Valor das Parcelas', value: 'valorParcela'}
-  //       ],
-       
-  //    }
-     
-  //  }, 
+export default { 
    computed: {
      ...mapGetters(['setProposals']),
      
@@ -83,5 +60,14 @@ export default {
 </script>
 
 <style>
+  .titles {
+    justify-content: center;
+  }
 
+  .header{
+    font-size: 4rem;
+  }
+  .templates {
+    width: 100%;
+  }
 </style>

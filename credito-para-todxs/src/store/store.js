@@ -7,11 +7,11 @@ export default new Vuex.Store({
   state: {
     income: 1000,
     proposals: [
-      { name: 'Proposta 1', valorEmprestimo: 0, parcelas: 3.0, valorParcela: 0, juros: 0.002, id: 1,},
-      { name: 'Proposta 2', valorEmprestimo: 0, parcelas: 6.0, valorParcela: 0, juros: 0.004, id: 2, },
-      { name: 'Proposta 3', valorEmprestimo: 0, parcelas: 12.0, valorParcela: 0, juros: 0.008, id: 3,},
-      { name: 'Proposta 4', valorEmprestimo: 0, parcelas: 18, valorParcela: 0, juros: 0.01, id: 4,},
-      { name: 'proposta 5', valorEmprestimo: 0, parcelas: 24, valorParcela: 0, juros: 0.02, id: 5,},
+      { name: 'Proposta em 3 parcelas', valorEmprestimo: 0, parcelas: 3.0, valorParcela: 0, juros: 0.002, id: 1,},
+      { name: 'Proposta em 6 parcelas', valorEmprestimo: 0, parcelas: 6.0, valorParcela: 0, juros: 0.004, id: 2, },
+      { name: 'Proposta em 12 parcelas', valorEmprestimo: 0, parcelas: 12.0, valorParcela: 0, juros: 0.008, id: 3,},
+      { name: 'Proposta em 18 parcelas', valorEmprestimo: 0, parcelas: 18, valorParcela: 0, juros: 0.01, id: 4,},
+      { name: 'proposta em 24 parcelas', valorEmprestimo: 0, parcelas: 24, valorParcela: 0, juros: 0.02, id: 5,},
 
     ],
   },
