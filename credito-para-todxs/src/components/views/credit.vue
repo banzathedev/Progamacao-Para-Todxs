@@ -19,7 +19,7 @@
         <v-container>
         <v-card-text>{{ monthlyIncome | dinheiro }} (Aperte Enter para confirmar o valor)</v-card-text>
         <v-btn @click.stop="addIncome">enviar</v-btn>
-                <!-- TODO criar navegador para o outro componente -->
+
         </v-container>
       </v-container>
     </v-card>
