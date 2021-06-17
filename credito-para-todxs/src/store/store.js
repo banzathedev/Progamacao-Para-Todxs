@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     income: 1000,
+    chosedProposal: [], 
     proposals: [
       { name: 'Proposta em 3 parcelas', valorEmprestimo: 0, parcelas: 3.0, valorParcela: 0, juros: 0.002, id: 1,},
       { name: 'Proposta em 6 parcelas', valorEmprestimo: 0, parcelas: 6.0, valorParcela: 0, juros: 0.004, id: 2, },
@@ -22,11 +23,16 @@ export default new Vuex.Store({
         const a = payload 
         change.valorEmprestimo = a
         console.log('payload tranformada em change', change)
-        // state.proposals.push(change= 0)
-        // console.log('estado modificado', state) //dont actually know how this works but works.
+        
       })
-  },
-  
+    },
+    addChosedProposal(state, payload) {
+      console.log('objeto recebido no adicionador', payload)
+      state.chosedProposal.push(payload)
+      console.log('objeto colocado no lugar',)
+      console.log('objeto adicionado ',state.chosedProposal)
+    }
+    
   },
   actions:
     
@@ -36,11 +42,29 @@ export default new Vuex.Store({
       const creditValue = math1 * 100
       console.log('addproposal foi chamada', creditValue)
     commit('addProposals', creditValue)
-    }
+    },
+    getProposalById({commit}, payload) {
+      console.log('id chegou no buscador', payload); //tirar
+      const geting = this.state.proposals
+      const result = geting.filter(function(g){
+        return g.id === payload
+      })
+      
+      console.log('objeto encontrado com o id', result)
+      commit('addChosedProposal', result)
+
+    },
+    callGetProposalById({dispatch}, payload) {
+      console.log('id recebido',payload )
+     dispatch('getProposalById', payload) //por enquanto n retorna nada
+    },
   },
   getters: {
     setProposals(state) {
       return state.proposals
+    },
+    setchosedProposal(state) {
+      return state.chosedProposal
     }
   }
   

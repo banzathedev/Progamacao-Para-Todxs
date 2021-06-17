@@ -15,9 +15,9 @@
 
                     </tr>
                 </thead>
-                <tbody>
+                <tbody >
                   
-                    <tr v-for="proposals in  proposalGet" :key="proposals.name">
+                    <tr v-for="proposals in  proposalGet" :key="proposals.name" @click.stop="`${passProposal(proposals.id)}`">
                         <td class="text-body-1">{{ proposals.name }}</td>
                         <td class="text-body-1">{{ proposals.valorEmprestimo | dinheiro }}</td>
                         <td class="text-body-1">{{ proposals.parcelas }}</td>
@@ -35,19 +35,28 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
+
 
 
 export default { 
+  methods: {
+    ...mapActions(['callGetProposalById']),
+
+    passProposal(number) { 
+        this.callGetProposalById(number)
+          this.$router.push("/Contratacao-Form")
+      
+        
+    },
+    goToBuy() {
+      return this.$router.push("/Contratacao-Form")
+    }
+  },
+
    computed: {
      ...mapGetters(['setProposals']),
      
-
-     emprestimoscalculo() {
-       const calculopp1 = this.incomes * 0.05
-       const calculopp2 = calculopp1 * 100
-       return console.log(calculopp2)
-     },
      proposalGet() {
        return this.setProposals
      },

@@ -4,6 +4,7 @@ import Home from "../components/views/home.vue";
 import Credit from "../components/views/credit.vue"
 import About from "../components/views/About.vue"
 import Proposal from "../components/views/Proposal.vue"
+import Buy from "../components/views/Buying.vue"
 
 
 Vue.use(VueRouter);
@@ -28,6 +29,11 @@ const routes = [
     path: "/Propostas",
     name: "Propostas",
     component: Proposal,
+  },
+  {
+    path: "/Contratacao-Form",
+    name: "Contratação",
+    component: Buy
   },
 ];
 

@@ -2,24 +2,23 @@
   <v-container>
     
     <v-card xs-3 md-6 lg-12 elevation="2" v-if="!submited">
-      <v-card-title> Credito Pessoal</v-card-title>
+      <v-card-title class="text-h3 titles"> Credito Pessoal</v-card-title>
       <v-container class="d-flex flex-column">
-        <v-card-text
+        <v-card-text class="text-h5 ml-16"
           >Apartir da sua renda mensal iremos calcular os emprestimos
           possiveis </v-card-text
         >
 
         <input
-          class="ml-2"
+          class="ml-5 blue lighten-5 rounded"
           label="insira a renda mensal(somente numeros ex: 1500)"
           type="number"
-          hide-details="auto"
+          
           v-model="monthlyIncome"
+          @keydown.enter.stop="addIncome"
         />
         <v-container>
         <v-card-text>{{ monthlyIncome | dinheiro }} (Aperte Enter para confirmar o valor)</v-card-text>
-        <v-btn @click.stop="addIncome">enviar</v-btn>
-
         </v-container>
       </v-container>
     </v-card>
@@ -58,5 +57,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.titles{
+  justify-content: center;
+}
+.contentCentered{
+  justify-content: center;
+}
 </style>
