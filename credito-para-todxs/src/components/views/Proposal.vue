@@ -23,7 +23,6 @@
                         <td class="text-body-1">{{ proposals.parcelas }}</td>
                         <td class="text-body-1">{{ proposals.juros * 100 }} %</td>
                         <td class="text-body-1">{{ proposals.valorEmprestimo / proposals.parcelas + (proposals.valorEmprestimo * proposals.juros) | dinheiro }}</td>
-                        
                     </tr>
                 </tbody>
           

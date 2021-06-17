@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     income: 1000,
     chosedProposal: [], 
+    formSended: [],
     proposals: [
       { name: 'Proposta em 3 parcelas', valorEmprestimo: 0, parcelas: 3.0, valorParcela: 0, juros: 0.002, id: 1,},
       { name: 'Proposta em 6 parcelas', valorEmprestimo: 0, parcelas: 6.0, valorParcela: 0, juros: 0.004, id: 2, },
@@ -18,20 +19,27 @@ export default new Vuex.Store({
   },
   mutations: {
     addProposals(state, payload) {
-      console.log('payload recebida', payload)
+      console.log('payload recebida', payload) //tirar
       state.proposals.forEach(function (change){
         const a = payload 
         change.valorEmprestimo = a
-        console.log('payload tranformada em change', change)
+        console.log('payload tranformada em change', change) //tirar
         
       })
     },
     addChosedProposal(state, payload) {
-      console.log('objeto recebido no adicionador', payload)
+      console.log('objeto recebido no adicionador', payload) //tirar
       state.chosedProposal.push(payload)
-      console.log('objeto colocado no lugar',)
-      console.log('objeto adicionado ',state.chosedProposal)
-    }
+      console.log('objeto colocado no lugar',) //tirar
+      console.log('objeto adicionado ',state.chosedProposal) //tirar
+    },
+    addSendedFormData(state, payload) {
+      console.log('objeto do recebido no adicionador', payload) //tirar
+      state.formSended.fill(payload)
+      console.log('data do form no lugar') //tirar
+      console.log('data form adicionada', state.formSended) //tirar
+
+    },
     
   },
   actions:
@@ -40,7 +48,7 @@ export default new Vuex.Store({
     addProposals({commit}, payload) {
       const math1 = payload * 0.05
       const creditValue = math1 * 100
-      console.log('addproposal foi chamada', creditValue)
+      console.log('addproposal foi chamada', creditValue) //tirar
     commit('addProposals', creditValue)
     },
     getProposalById({commit}, payload) {
@@ -50,14 +58,19 @@ export default new Vuex.Store({
         return g.id === payload
       })
       
-      console.log('objeto encontrado com o id', result)
+      console.log('objeto encontrado com o id', result) //tirar
       commit('addChosedProposal', result)
 
     },
     callGetProposalById({dispatch}, payload) {
-      console.log('id recebido',payload )
-     dispatch('getProposalById', payload) //por enquanto n retorna nada
+      console.log('id recebido',payload ) //tirar
+     dispatch('getProposalById', payload) 
     },
+    sendedformData({commit}, payload) {
+      console.log('data do forme recebida com sucesso na store', payload) //tirar
+      commit('addSendedFormData', payload)
+    },
+   
   },
   getters: {
     setProposals(state) {
