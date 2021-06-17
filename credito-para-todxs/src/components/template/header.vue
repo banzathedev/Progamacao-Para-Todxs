@@ -8,11 +8,11 @@
     <v-spacer></v-spacer>
 
     <v-toolbar-items>
-      <v-btn text   color="amber lighten-4" to="/Credito-Pessoal"
+      <v-btn text color="amber lighten-4" to="/Credito-Pessoal"
         >Crédito pessoal</v-btn
       >
-      <v-btn text  color="amber lighten-4" to="/Sobre">Sobre</v-btn>
-      <v-btn text  color="amber lighten-4" ></v-btn>
+      <v-btn text color="amber lighten-4" to="/Sobre">Sobre</v-btn>
+      <v-btn text color="amber lighten-4"></v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
