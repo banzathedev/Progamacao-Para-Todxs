@@ -3,7 +3,7 @@
     <v-btn icon to="/">
       <v-icon color="white">mdi-home</v-icon>
     </v-btn>
-    <v-toolbar-title class="ml-3 white--text">Titulo da pagina</v-toolbar-title>
+    <v-toolbar-title class="ml-3 white--text">CréditoParaTodxs</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
