@@ -2,13 +2,12 @@
 
 ## Project setup
 ```
-Apos Baixar o projeto entre na pasta credito-para-todxs e em seu terminal insira o comando -> npm install
-
+Apos Baixar o projeto entre na pasta credito-para-todxs e em seu terminal(cmd ou outro de sua escolha) insira o comando -> npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-Para Iniciar a Aplicação na pasta credito-para-todxs abra o terminal e insira o comando-> npm run serve 
+Para Iniciar a Aplicação na pasta credito-para-todxs abra o terminal(cmd ou outro de sua escolha) e insira o comando-> npm run serve 
 A aplicação sera compilada e iniciada, então no terminal ira aparecer esta mensagem : " App running at:
                                                                                         - Local:   http://localhost:8081/
                                                                                         - Network: http://192.168.0.19:8081/"
