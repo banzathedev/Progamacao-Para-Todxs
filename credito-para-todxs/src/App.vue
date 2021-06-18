@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <Header />
+      <Header class="deep-purple lighten-1"/>
       <v-img
         id="img"
         min-height="minHeight"
@@ -70,4 +70,5 @@ export default {
 #img {
   height: 2000px;
 }
+
 </style>

@@ -133,49 +133,29 @@
                     >
                       Entre em contato:
                     </h3>
-                    <p
-                      class="
+                    
+                    <ul>
+                      <li class="
                         text-subtitle-1
-                        mx-auto
-                        black--text
-                        text--darken-1 text-left
-                        mb-0
-                      "
-                      style="max-width: 700px"
-                    >
-                      Email: contato@credptodxs.com.br
-                    </p>
-                    <p
-                      class="
+                        text--darken-1 text-left">Email: contato@credptodxs.com.br</li>
+                      <li class="
                         text-subtitle-1
-                        mx-auto
-                        black--text
-                        text--darken-1 text-left
-                      "
-                    >
-                      telefone: 0800-6060
-                    </p>
-                    <p
-                      class="
+                        text--darken-1 text-left">Telefone: 0800-6060</li>
+                      <li class="
                         text-subtitle-1
-                        mx-auto
-                        black--text
-                        text--darken-1 text-left
-                      "
-                    >
-                      whatsApp: (11) 9 9988-9988
-                    </p>
-                    <p
-                      class="
+                        text--darken-1 text-left">whatsApp: (11) 9 9988-9988</li>
+                        <li class="
                         text-subtitle-1
-                        mx-auto
-                        black--text
-                        text--darken-1 text-left
-                      "
-                    >
-                      Endereço: Rua Esta <a> Rua </a> n* 1000
-                    </p>
+                        text--darken-1">Endereço: Rua Esta <a> Rua </a> n*</li>
+                    </ul>
                   </div>
+                  <div class="col-md-6 col-12">
+                    <div>
+                    <img id="imgStyle" src="@/assets/mobile.png" >
+                    </div>
+                <div class="pt-2 mb-8 d-flex">
+                </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -226,5 +206,9 @@ export default {
 .templates {
   width: 100%;
   height: 100%;
+}
+#imgStyle{
+  width: 150px;
+  height: 220px;
 }
 </style>
