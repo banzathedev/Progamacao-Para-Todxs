@@ -219,7 +219,6 @@ export default {
     ...mapGetters(["setchosedProposal"]),
 
     proposalForDialog() {
-      console.log("chegou aqui", this.setchosedProposal);
       return this.setchosedProposal[0];
     },
   },
@@ -227,7 +226,6 @@ export default {
     this.proposalForDialog;
   },
 };
-//TODO TIRAR CONSOLES
 </script>
 
 <style>
