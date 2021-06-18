@@ -18,7 +18,10 @@ p.s: as portas do localhost podem mudar de acordo com a disponibilidade por isso
 
 ### Compiles and minifies for production
 ```
-npm run build
+
+esse comando é utilizado para criar o build e dar deply onde quiser -> npm run build
+no meu caso fiz o deploy na AWS : http://creditoparatodxs.s3-website-sa-east-1.amazonaws.com
+
 ```
 
 ### Lints and fixes files
