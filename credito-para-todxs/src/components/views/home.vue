@@ -1,77 +1,100 @@
 <template>
   <div name="all">
-    <div name="top">
-      <v-container class="fill-height fill-width px-4 py-12">
-        <v-responsive
-          class="d-flex align-center mx-auto"
-          height="100%"
-          max-width="700"
-          width="100%"
-        >
-          <template>
-            <div
-              class="v-responsive d-flex align-center mx-auto"
-              style="height: 100%; max-width: 700px; width: 100%"
-            >
-              <div class="v-responsive__content">
-                <h1
-                  class="text-h4 font-weight-regular mb-4 text-left white--text"
-                >
-                  Crédito Para Todxs
-                </h1>
-                <h1
-                  class="text-h6 font-weight-medium mb-4 text-left white--text"
-                >
-                  Ajudamos Todxs a conquistar seus sonhos
-                </h1>
-                <p
-                  class="text-body-1 grey--text text--lighten-1 text-left mb-10"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repudiandae nobis neque aspernatur in quas iure id aliquid,
-                  esse debitis, quibusdam mollitia! Quia ea expedita magnam
-                  totam, earum omnis et perspiciatis?
-                </p>
-                <div class="d-flex flex-wrap align-center">
-                  <button
-                    type="button"
+    <v-divider class="mt-15 mb-15 blue-grey lighten-1"></v-divider>
+    <v-sheet class="indigo lighten-4">
+      <div name="top">
+        <v-container class="fill-height fill-width px-4 py-12">
+          <v-responsive
+            class="d-flex align-center mx-auto"
+            height="100%"
+            max-width="700"
+            width="100%"
+          >
+            <template>
+              <div
+                class="v-responsive d-flex align-center mx-auto"
+                style="height: 100%; max-width: 700px; width: 100%"
+              >
+                <div class="v-responsive__content">
+                  <h1
                     class="
-                      font-weight-bold
-                      v-btn v-btn--has-bg v-btn--tile
-                      theme--dark
-                      v-size--x-large
-                      primary
+                      text-h4
+                      font-weight-regular
+                      mb-4
+                      text-left
+                      black--text
                     "
-                    style="min-width: 164px"
-                    @click="goToCredit"
                   >
-                    <span class="v-btn__content">Solicite seu Emprestimo</span>
-                  </button>
-                  <span class="font-weight-bold ml-6 mr-4 my-4">or</span>
-                  <button
-                    type="button"
+                    Crédito Para Todxs
+                  </h1>
+                  <h1
                     class="
-                      font-weight-bold
-                      pa-1
-                      v-btn v-btn--text v-btn--tile
-                      theme--dark
-                      v-size--x-large
-                      primary--text
+                      text-h6
+                      font-weight-medium
+                      mb-4
+                      text-left
+                      black--text
                     "
-                    height="auto"
-                    text=""
-                    style="height: auto; min-width: 164px"
-                    @click="goToAbout"
                   >
-                    <span class="v-btn__content"> Saiba mais sobre nós </span>
-                  </button>
+                    Ajudamos Todxs a conquistar seus sonhos
+                  </h1>
+                  <p
+                    class="
+                      text-body-1
+                      grey--text
+                      text--darken-2 text-left
+                      mb-10
+                    "
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repudiandae nobis neque aspernatur in quas iure id aliquid,
+                    esse debitis, quibusdam mollitia! Quia ea expedita magnam
+                    totam, earum omnis et perspiciatis?
+                  </p>
+                  <div class="d-flex flex-wrap align-center">
+                    <button
+                      type="button"
+                      class="
+                        font-weight-bold
+                        v-btn v-btn--has-bg v-btn--tile
+                        theme--dark
+                        v-size--x-large
+                        primary
+                      "
+                      style="min-width: 164px"
+                      @click="goToCredit"
+                    >
+                      <span class="v-btn__content"
+                        >Solicite seu Emprestimo</span
+                      >
+                    </button>
+                    <span class="font-weight-bold ml-6 mr-4 my-4">ou</span>
+                    <button
+                      type="button"
+                      class="
+                        font-weight-bold
+                        pa-1
+                        v-btn v-btn--text v-btn--tile
+                        theme--dark
+                        v-size--x-large
+                        primary--text
+                      "
+                      height="auto"
+                      text=""
+                      style="height: auto; min-width: 164px"
+                      @click="goToAbout"
+                    >
+                      <span class="v-btn__content"> Saiba mais sobre nós </span>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </template>
-        </v-responsive>
-      </v-container>
-    </div>
+            </template>
+          </v-responsive>
+        </v-container>
+      </div>
+    </v-sheet>
+    <v-divider class="mt-15 mb-5 blue-grey lighten-1"></v-divider>
     <div name="Sheet">
       <template>
         <div
@@ -497,4 +520,8 @@ export default {
 </script>
 
 <style>
+.imgStyle {
+  width: 30%;
+  height: 30%;
+}
 </style>

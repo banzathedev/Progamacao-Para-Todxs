@@ -1,28 +1,34 @@
 <template>
   <v-container>
-    <v-card xs-3 md-6 lg-12 elevation="2" v-if="!submited">
-      <v-card-title class="text-h3 titles"> Credito Pessoal</v-card-title>
-      <v-container class="d-flex flex-column">
-        <v-card-text class="text-h5 ml-16"
-          >Apartir da sua renda mensal iremos calcular os emprestimos possiveis
-        </v-card-text>
-
-        <input
-          class="ml-5 blue lighten-5 rounded"
-          label="insira a renda mensal(somente numeros ex: 1500)"
-          type="number"
-          v-model="monthlyIncome"
-          @keydown.enter.stop="addIncome"
-        />
+    <v-sheet>
+      <v-container class="" elevation="2" v-if="!submited">
+        <v-card-title class="text-h3 titles">
+          Peça seu empréstimo abaixo</v-card-title
+        >
+        <v-divider class="mt-2 mb-2"></v-divider>
+        <div class="row pt-3">
+          <input
+            class="ml-10 blue lighten-5 rounded height: auto; min-width: 164px"
+            label="insira a renda mensal(somente numeros ex: 1500)"
+            type="number"
+            v-model="monthlyIncome"
+            @keydown.enter.stop="addIncome"
+            placeholder="Insira sua renda mensal"
+          />
+          <p class="ml-2 pt-5">
+            {{ monthlyIncome | dinheiro }} (Aperte Enter para confirmar o valor)
+          </p>
+        </div>
         <v-container>
-          <v-card-text
-            >{{ monthlyIncome | dinheiro }} (Aperte Enter para confirmar o
-            valor)</v-card-text
-          >
+          <v-divider class="mt-7 mb-5"></v-divider>
+          <p class="text-h5">
+            O Valor é calculado da seguinte maneira: 3% da sua renda mensal x
+            100
+          </p>
         </v-container>
       </v-container>
-    </v-card>
-    <Proposal v-else />
+      <Proposal v-else />
+    </v-sheet>
   </v-container>
 </template>
 
@@ -35,7 +41,7 @@ export default {
 
   data() {
     return {
-      monthlyIncome: 0,
+      monthlyIncome: null,
       submited: false,
     };
   },
@@ -56,5 +62,8 @@ export default {
 }
 .contentCentered {
   justify-content: center;
+}
+#inline {
+  display: inline;
 }
 </style>

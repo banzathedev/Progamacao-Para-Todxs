@@ -1,9 +1,10 @@
 <template>
   <div class="templates">
-    <v-card class="elevation-2">
+    <v-sheet class="elevation-2">
       <v-card-title class="display-1 titles">
         Clique no emprestimo de interesse</v-card-title
       >
+      <v-divider class="mt-2 mb-2"></v-divider>
       <v-card-text class="">
         <v-simple-table v-ripple height="300px">
           <template v-slot:default>
@@ -39,8 +40,149 @@
             </tbody>
           </template>
         </v-simple-table>
+        <v-divider class="mt-10 mb-2"></v-divider>
+        <div
+          class="
+            v-sheet
+            theme--light
+            indigo
+            lighten-4
+            rounded-0
+            mt-15
+            elevation-2
+          "
+          style="padding: 96px 0px; opacity: 0.8"
+        >
+          <div class="text-center mb-12">
+            <h1
+              class="text-uppercase text-h5 font-weight-bold mb-2 text-center"
+            >
+              Não encontrou o que procurava ?
+            </h1>
+            <div
+              class="v-responsive primary mx-auto mb-6"
+              style="max-width: 28px"
+            >
+              <div class="v-responsive">
+                <hr
+                  role="separator"
+                  aria-orientation="horizontal"
+                  class="v-divider theme--light"
+                />
+              </div>
+            </div>
+            <p
+              class="
+                text-body-1
+                mx-auto
+                grey--text
+                text--darken-1 text-center
+                mb-10
+              "
+              style="max-width: 700px"
+            >
+              Nesse Caso Estamos aqui para Ajudar, nosso objetivo é que você
+              conquiste seu sonho !!
+            </p>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="pt-2 mb-8 d-flex">
+                  <div class="d-inline-flex mb-3 align-self-start">
+                    <div
+                      class="v-avatar"
+                      style="
+                        height: 84px;
+                        min-width: 84px;
+                        width: 84px;
+                        opacity: 0;
+                        margin: -6px 0px 0px -6px;
+                      "
+                    ></div>
+                    <div
+                      class="v-avatar white"
+                      style="
+                        height: 72px;
+                        min-width: 72px;
+                        width: 72px;
+                        opacity: 0.9;
+                      "
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="
+                          v-icon
+                          notranslate
+                          mdi mdi-information
+                          theme--light
+                        "
+                        style="font-size: 36px"
+                      >
+                      </i>
+                    </div>
+                  </div>
+                  <div class="ml-6">
+                    <h3
+                      class="
+                        text-uppercase text-h6
+                        font-weight-bold
+                        mb-3
+                        text-left
+                      "
+                    >
+                      Entre em contato:
+                    </h3>
+                    <p
+                      class="
+                        text-subtitle-1
+                        mx-auto
+                        black--text
+                        text--darken-1 text-left
+                        mb-0
+                      "
+                      style="max-width: 700px"
+                    >
+                      Email: contato@credptodxs.com.br
+                    </p>
+                    <p
+                      class="
+                        text-subtitle-1
+                        mx-auto
+                        black--text
+                        text--darken-1 text-left
+                      "
+                    >
+                      telefone: 0800-6060
+                    </p>
+                    <p
+                      class="
+                        text-subtitle-1
+                        mx-auto
+                        black--text
+                        text--darken-1 text-left
+                      "
+                    >
+                      whatsApp: (11) 9 9988-9988
+                    </p>
+                    <p
+                      class="
+                        text-subtitle-1
+                        mx-auto
+                        black--text
+                        text--darken-1 text-left
+                      "
+                    >
+                      Endereço: Rua Esta <a> Rua </a> n* 1000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </v-card-text>
-    </v-card>
+    </v-sheet>
   </div>
 </template>
 
