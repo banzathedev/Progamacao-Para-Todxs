@@ -1,5 +1,5 @@
 <template>
-  <div class="templates">
+  <div>
     <v-sheet class="elevation-2">
       <v-card-title class="display-1 titles">
         Clique no emprestimo de interesse</v-card-title
@@ -11,8 +11,8 @@
             <thead>
               <tr>
                 <th class="text-h6">Propostas</th>
-                <th class="text-h6">Emprestimo</th>
-                <th class="text-h6">Parcelas</th>
+                <th class="text-h6">Valor de empréstimo</th>
+                <th class="text-h6">Qntd. Parcelas</th>
                 <th class="text-h6">juros(%)</th>
                 <th class="text-h6">Valor da Parcelas</th>
               </tr>
@@ -27,7 +27,7 @@
                 <td class="text-body-1">
                   {{ proposals.valorEmprestimo | dinheiro }}
                 </td>
-                <td class="text-body-1">{{ proposals.parcelas }}</td>
+                <td class="text-body-1">{{ proposals.parcelas }}x</td>
                 <td class="text-body-1">{{ proposals.juros * 100 }} %</td>
                 <td class="text-body-1">
                   {{
@@ -225,5 +225,6 @@ export default {
 }
 .templates {
   width: 100%;
+  height: 100%;
 }
 </style>

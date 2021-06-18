@@ -3,6 +3,7 @@
     <v-main>
       <Header />
       <v-img
+        id="img"
         min-height="minHeight"
         :src="require('@/assets/AplicationBackGround.jpeg')"
         class="white--text"
@@ -64,5 +65,9 @@ export default {
 
 .slide-leave-active {
   animation: slide-out 0.3s ease;
+}
+
+#img {
+  height: 2000px;
 }
 </style>

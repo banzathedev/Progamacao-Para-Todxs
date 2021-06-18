@@ -32,7 +32,7 @@ export default new Vuex.Store({
       state.formSended.fill(payload);
     },
   },
-  actions:{
+  actions: {
     addProposals({ commit }, payload) {
       const math1 = payload * 0.03;
       const creditValue = math1 * 100;
@@ -61,4 +61,4 @@ export default new Vuex.Store({
       return state.chosedProposal;
     },
   },
-}); 
+});
