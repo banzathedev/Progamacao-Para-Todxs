@@ -249,6 +249,8 @@ export default {
     this.proposalForDialog;
   },
 };
+
+//TODO create validations on forms  and apply filters on the dialog
 </script>
 
 <style>
