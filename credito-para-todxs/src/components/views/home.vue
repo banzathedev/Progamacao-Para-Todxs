@@ -107,7 +107,7 @@
             mt-15
             elevation-2
           "
-          style="padding: 96px 0px; opacity: 0.8"
+          style="padding: 96px 0px; opacity: 1"
         >
           <div class="text-center mb-12">
             <h1
@@ -143,360 +143,328 @@
             </p>
           </div>
           <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-12">
-                <div class="pt-2 mb-8 d-flex">
-                  <div class="d-inline-flex mb-3 align-self-start">
-                    <div
-                      class="v-avatar grey lighten-4"
-                      style="
-                        height: 84px;
-                        min-width: 84px;
-                        width: 84px;
-                        opacity: 0;
-                        margin: -6px 0px 0px -6px;
-                      "
-                    ></div>
-                    <div
-                      class="v-avatar white"
-                      style="
-                        height: 72px;
-                        min-width: 72px;
-                        width: 72px;
-                        opacity: 0.9;
-                      "
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="
-                          v-icon
-                          notranslate
-                          mdi mdi-information
-                          theme--light
-                        "
-                        style="font-size: 36px"
-                      >
-                      </i>
+            <div name="card slots" class="row">
+              <div name="lg right content" class="col-lg-6 col-12">
+                <v-col name="informations" class="mr-10" md="6" sm="3" xs="2">
+                  <div class="pa-2 ml-5">
+                    <div class="pt-2 mb-8 d-flex">
+                      <div class="d-inline-flex mb-3 align-self-start">
+                        <div
+                          class="v-avatar white"
+                          style="
+                            height: 72px;
+                            min-width: 72px;
+                            width: 72px;
+                            opacity: 0.9;
+                          "
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-information
+                              theme--light
+                            "
+                            style="font-size: 36px"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="ml-6">
+                        <h3
+                          class="
+                            text-uppercase text-h6
+                            font-weight-bold
+                            mb-3
+                            text-left
+                          "
+                        >
+                          Informations
+                        </h3>
+                        <p
+                          class="
+                            text-body-1
+                            mx-auto
+                            black--text
+                            text--darken-1 text-left
+                            mb-0
+                          "
+                          style="max-width: 700px"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Veritatis illum veniam cum dolores ratione
+                          commodi beatae quas maxime, laboriosam excepturi
+                          solut!
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="ml-6">
-                    <h3
-                      class="
-                        text-uppercase text-h6
-                        font-weight-bold
-                        mb-3
-                        text-left
-                      "
-                    >
-                      Informations
-                    </h3>
-                    <p
-                      class="
-                        text-body-1
-                        mx-auto
-                        black--text
-                        text--darken-1 text-left
-                        mb-0
-                      "
-                      style="max-width: 700px"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis illum veniam cum dolores ratione commodi beatae
-                      quas maxime, laboriosam excepturi solut!
-                    </p>
+                </v-col>
+                <v-col name="contact us" md="6" sm="3" xs="2">
+                  <div class="pa-2 ml-5">
+                    <div class="pt-2 mb-8 d-flex">
+                      <div class="d-inline-flex mb-3 align-self-start">
+                        <div
+                          class="v-avatar white"
+                          style="height: 72px; min-width: 72px; width: 72px"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-cellphone
+                              theme--light
+                            "
+                            style="font-size: 36px"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="ml-6">
+                        <h3
+                          class="
+                            text-uppercase text-h6
+                            font-weight-bold
+                            mb-3
+                            text-left
+                          "
+                        >
+                          Contact us
+                        </h3>
+                        <p
+                          class="
+                            text-body-1
+                            mx-auto
+                            grey--text
+                            text--darken-1 text-left
+                            mb-0
+                          "
+                          style="max-width: 700px"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Veritatis illum veniam cum dolores ratione
+                          commodi beatae quas maxime, laboriosam excepturi
+                          solut!
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </v-col>
+                <v-col name="documents" class="mr-10" md="6" sm="3" xs="2">
+                  <div class="pa-2 ml-5">
+                    <div class="pt-2 mb-8 d-flex">
+                      <div class="d-inline-flex mb-3 align-self-start">
+                        <div
+                          class="v-avatar primary"
+                          style="height: 72px; min-width: 72px; width: 72px"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-file-document-multiple-outline
+                              theme--dark
+                            "
+                            dark="true"
+                            style="font-size: 36px"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="ml-6">
+                        <h3
+                          class="
+                            text-uppercase text-h6
+                            font-weight-bold
+                            mb-3
+                            text-left
+                          "
+                        >
+                          Documents You Need
+                        </h3>
+                        <p
+                          class="
+                            text-body-1
+                            mx-auto
+                            grey--text
+                            text--darken-1 text-left
+                            mb-0
+                          "
+                          style="max-width: 700px"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Veritatis illum veniam cum dolores ratione
+                          commodi beatae quas maxime, laboriosam excepturi
+                          solut!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </v-col>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="pt-2 mb-8 d-flex">
-                  <div class="d-inline-flex mb-3 align-self-start">
-                    <div
-                      class="v-avatar grey lighten-4"
-                      style="
-                        height: 84px;
-                        min-width: 84px;
-                        width: 84px;
-                        opacity: 0;
-                        margin: -6px 0px 0px -6px;
-                      "
-                    ></div>
-                    <div
-                      class="v-avatar white"
-                      style="height: 72px; min-width: 72px; width: 72px"
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="
-                          v-icon
-                          notranslate
-                          mdi mdi-cellphone
-                          theme--light
-                        "
-                        style="font-size: 36px"
-                      >
-                      </i>
+              <div name="lg left content" class="col-lg-6 col-12">
+                <v-col name="More Info" class="mr-10" md="6" sm="3" xs="2">
+                  <div class="pa-2 ml-5">
+                    <div class="pt-2 mb-8 d-flex">
+                      <div class="d-inline-flex mb-3 align-self-start">
+                        <div
+                          class="v-avatar white"
+                          style="height: 72px; min-width: 72px; width: 72px"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-image-size-select-actual
+                              theme--light
+                            "
+                            style="font-size: 36px"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="ml-6">
+                        <h3
+                          class="
+                            text-uppercase text-h6
+                            font-weight-bold
+                            mb-3
+                            text-left
+                          "
+                        >
+                          More Informations
+                        </h3>
+                        <p
+                          class="
+                            text-body-1
+                            mx-auto
+                            grey--text
+                            text--darken-1 text-left
+                            mb-0
+                          "
+                          style="max-width: 700px"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Veritatis illum veniam cum dolores ratione
+                          commodi beatae quas maxime, laboriosam excepturi
+                          solut!
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="ml-6">
-                    <h3
-                      class="
-                        text-uppercase text-h6
-                        font-weight-bold
-                        mb-3
-                        text-left
-                      "
-                    >
-                      Contact us
-                    </h3>
-                    <p
-                      class="
-                        text-body-1
-                        mx-auto
-                        grey--text
-                        text--darken-1 text-left
-                        mb-0
-                      "
-                      style="max-width: 700px"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis illum veniam cum dolores ratione commodi beatae
-                      quas maxime, laboriosam excepturi solut!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="pt-2 mb-8 d-flex">
-                  <div class="d-inline-flex mb-3 align-self-start">
-                    <div
-                      class="v-avatar primary"
-                      style="
-                        height: 84px;
-                        min-width: 84px;
-                        width: 84px;
-                        opacity: 0;
-                        margin: -6px 0px 0px -6px;
-                      "
-                    ></div>
-                    <div
-                      class="v-avatar primary"
-                      style="height: 72px; min-width: 72px; width: 72px"
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="
-                          v-icon
-                          notranslate
-                          mdi mdi-file-document-multiple-outline
-                          theme--dark
-                        "
-                        dark="true"
-                        style="font-size: 36px"
-                      >
-                      </i>
+                </v-col>
+                <v-col
+                  name="Credit Opitions"
+                  class="mr-10"
+                  md="6"
+                  sm="3"
+                  xs="2"
+                >
+                  <div class="pa-2 ml-5">
+                    <div class="pt-2 mb-8 d-flex">
+                      <div class="d-inline-flex mb-3 align-self-start">
+                        <div
+                          class="v-avatar white"
+                          style="height: 72px; min-width: 72px; width: 72px"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-cash-multiple
+                              theme--light
+                            "
+                            style="font-size: 36px"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="ml-6">
+                        <h3
+                          class="
+                            text-uppercase text-h6
+                            font-weight-bold
+                            mb-3
+                            text-left
+                          "
+                        >
+                          Best Credit Options
+                        </h3>
+                        <p
+                          class="
+                            text-body-1
+                            mx-auto
+                            grey--text
+                            text--darken-1 text-left
+                            mb-0
+                          "
+                          style="max-width: 700px"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Veritatis illum veniam cum dolores ratione
+                          commodi beatae quas maxime, laboriosam excepturi
+                          solut!
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="ml-6">
-                    <h3
-                      class="
-                        text-uppercase text-h6
-                        font-weight-bold
-                        mb-3
-                        text-left
-                      "
-                    >
-                      Documents You Need
-                    </h3>
-                    <p
-                      class="
-                        text-body-1
-                        mx-auto
-                        grey--text
-                        text--darken-1 text-left
-                        mb-0
-                      "
-                      style="max-width: 700px"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis illum veniam cum dolores ratione commodi beatae
-                      quas maxime, laboriosam excepturi solut!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="pt-2 mb-8 d-flex">
-                  <div class="d-inline-flex mb-3 align-self-start">
-                    <div
-                      class="v-avatar grey lighten-4"
-                      style="
-                        height: 84px;
-                        min-width: 84px;
-                        width: 84px;
-                        opacity: 0;
-                        margin: -6px 0px 0px -6px;
-                      "
-                    ></div>
-                    <div
-                      class="v-avatar white"
-                      style="height: 72px; min-width: 72px; width: 72px"
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="
-                          v-icon
-                          notranslate
-                          mdi mdi-image-size-select-actual
-                          theme--light
-                        "
-                        style="font-size: 36px"
-                      >
-                      </i>
+                </v-col>
+                <v-col name="Suport" class="mr-10" md="6" sm="3" xs="2">
+                  <div class="pa-2 ml-5">
+                    <div class="pt-2 mb-8 d-flex">
+                      <div class="d-inline-flex mb-3 align-self-start">
+                        <div
+                          class="v-avatar white"
+                          style="height: 72px; min-width: 72px; width: 72px"
+                        >
+                          <i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-help-circle-outline
+                              theme--light
+                            "
+                            style="font-size: 36px"
+                          >
+                          </i>
+                        </div>
+                      </div>
+                      <div class="ml-6">
+                        <h3
+                          class="
+                            text-uppercase text-h6
+                            font-weight-bold
+                            mb-3
+                            text-left
+                          "
+                        >
+                          24/7 Support
+                        </h3>
+                        <p
+                          class="
+                            text-body-1
+                            mx-auto
+                            grey--text
+                            text--darken-1 text-left
+                            mb-0
+                          "
+                          style="max-width: 700px"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Veritatis illum veniam cum dolores ratione
+                          commodi beatae quas maxime, laboriosam excepturi
+                          solut!
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="ml-6">
-                    <h3
-                      class="
-                        text-uppercase text-h6
-                        font-weight-bold
-                        mb-3
-                        text-left
-                      "
-                    >
-                      More Informations
-                    </h3>
-                    <p
-                      class="
-                        text-body-1
-                        mx-auto
-                        grey--text
-                        text--darken-1 text-left
-                        mb-0
-                      "
-                      style="max-width: 700px"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis illum veniam cum dolores ratione commodi beatae
-                      quas maxime, laboriosam excepturi solut!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="pt-2 mb-8 d-flex">
-                  <div class="d-inline-flex mb-3 align-self-start">
-                    <div
-                      class="v-avatar grey lighten-4"
-                      style="
-                        height: 84px;
-                        min-width: 84px;
-                        width: 84px;
-                        opacity: 0;
-                        margin: -6px 0px 0px -6px;
-                      "
-                    ></div>
-                    <div
-                      class="v-avatar white"
-                      style="height: 72px; min-width: 72px; width: 72px"
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="
-                          v-icon
-                          notranslate
-                          mdi mdi-cash-multiple
-                          theme--light
-                        "
-                        style="font-size: 36px"
-                      >
-                      </i>
-                    </div>
-                  </div>
-                  <div class="ml-6">
-                    <h3
-                      class="
-                        text-uppercase text-h6
-                        font-weight-bold
-                        mb-3
-                        text-left
-                      "
-                    >
-                      Best Credit Options
-                    </h3>
-                    <p
-                      class="
-                        text-body-1
-                        mx-auto
-                        grey--text
-                        text--darken-1 text-left
-                        mb-0
-                      "
-                      style="max-width: 700px"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis illum veniam cum dolores ratione commodi beatae
-                      quas maxime, laboriosam excepturi solut!
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-12">
-                <div class="pt-2 mb-8 d-flex">
-                  <div class="d-inline-flex mb-3 align-self-start">
-                    <div
-                      class="v-avatar grey lighten-4"
-                      style="
-                        height: 84px;
-                        min-width: 84px;
-                        width: 84px;
-                        opacity: 0;
-                        margin: -6px 0px 0px -6px;
-                      "
-                    ></div>
-                    <div
-                      class="v-avatar white"
-                      style="height: 72px; min-width: 72px; width: 72px"
-                    >
-                      <i
-                        aria-hidden="true"
-                        class="
-                          v-icon
-                          notranslate
-                          mdi mdi-help-circle-outline
-                          theme--light
-                        "
-                        style="font-size: 36px"
-                      >
-                      </i>
-                    </div>
-                  </div>
-                  <div class="ml-6">
-                    <h3
-                      class="
-                        text-uppercase text-h6
-                        font-weight-bold
-                        mb-3
-                        text-left
-                      "
-                    >
-                      24/7 Support
-                    </h3>
-                    <p
-                      class="
-                        text-body-1
-                        mx-auto
-                        grey--text
-                        text--darken-1 text-left
-                        mb-0
-                      "
-                      style="max-width: 700px"
-                    >
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis illum veniam cum dolores ratione commodi beatae
-                      quas maxime, laboriosam excepturi solut!
-                    </p>
-                  </div>
-                </div>
+                </v-col>
               </div>
             </div>
           </div>

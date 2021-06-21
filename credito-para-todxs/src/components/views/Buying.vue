@@ -42,7 +42,7 @@
                 v-for="chosedProposal in proposalForDialog"
                 :key="chosedProposal.name"
               >
-                selecionado: {{ chosedProposal.name }}
+                Você escolheu a: {{ chosedProposal.name }}
               </p>
               <div>
                 <v-divider class="ml-2 mr-2 grey grey darken-5"></v-divider>
@@ -250,7 +250,7 @@ export default {
   },
 };
 
-//TODO create validations on forms  and apply filters on the dialog
+
 </script>
 
 <style>
