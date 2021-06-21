@@ -41,16 +41,9 @@
           </template>
         </v-simple-table>
         <v-divider class="mt-10 mb-2"></v-divider>
+
         <div
-          class="
-            v-sheet
-            theme--light
-            indigo
-            lighten-4
-            rounded-0
-            mt-15
-            elevation-2
-          "
+          class="v-sheet theme--light red lighten-4 rounded-0 mt-15 elevation-2"
           style="padding: 96px 0px; opacity: 0.8"
         >
           <div class="text-center mb-12">
@@ -86,7 +79,7 @@
             </p>
           </div>
           <div class="container">
-            <div class="row">
+            <div class="d-none d-lg-block row">
               <div class="col-md-6 col-12">
                 <div class="pt-2 mb-8 d-flex">
                   <div class="d-inline-flex mb-3 align-self-start">
@@ -133,31 +126,85 @@
                     >
                       Entre em contato:
                     </h3>
-                    
+
                     <ul>
-                      <li class="
-                        text-subtitle-1
-                        text--darken-1 text-left">Email: contato@credptodxs.com.br</li>
-                      <li class="
-                        text-subtitle-1
-                        text--darken-1 text-left">Telefone: 0800-6060</li>
-                      <li class="
-                        text-subtitle-1
-                        text--darken-1 text-left">whatsApp: (11) 9 9988-9988</li>
-                        <li class="
-                        text-subtitle-1
-                        text--darken-1">Endereço: Rua Esta <a> Rua </a> n*</li>
+                      <li class="text-subtitle-1 text--darken-1 text-left">
+                        Email: contato@credptodxs.com.br
+                      </li>
+                      <li class="text-subtitle-1 text--darken-1 text-left">
+                        Telefone: 0800-6060
+                      </li>
+                      <li class="text-subtitle-1 text--darken-1 text-left">
+                        whatsApp: (11) 9 9988-9988
+                      </li>
+                      <li class="text-subtitle-1 text--darken-1">
+                        Endereço: Rua Esta <a> Rua </a> n*
+                      </li>
                     </ul>
                   </div>
                   <div class="col-md-6 col-12">
                     <div>
-                    <img id="imgStyle" src="@/assets/mobile.png" >
+                      <img id="imgStyle" src="@/assets/mobile.png" />
                     </div>
-                <div class="pt-2 mb-8 d-flex">
-                </div>
-                </div>
+                    <div class="pt-2 mb-8 d-flex"></div>
+                  </div>
                 </div>
               </div>
+            </div>
+
+            <div class="d-lg-none row">
+              <v-col class="mr-10 ml-5" md="6" sm="3" xs="2">
+                <div class="pa-2 ml-15">
+                  <div
+                    class="v-avatar white"
+                    style="
+                      height: 72px;
+                      min-width: 72px;
+                      width: 72px;
+                      opacity: 0.9;
+                    "
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="
+                        v-icon
+                        notranslate
+                        mdi mdi-information
+                        theme--light
+                      "
+                      style="font-size: 36px"
+                    >
+                    </i>
+                  </div>
+                </div>
+                <div>
+                  <h3
+                    class="
+                      text-uppercase text-h6
+                      font-weight-bold
+                      mb-3
+                      text-left
+                    "
+                  >
+                    Entre em contato:
+                  </h3>
+
+                  <ul>
+                    <li class="text-subtitle-1 text--darken-1 text-left">
+                      Email: contato@credptodxs.com.br
+                    </li>
+                    <li class="text-subtitle-1 text--darken-1 text-left">
+                      Telefone: 0800-6060
+                    </li>
+                    <li class="text-subtitle-1 text--darken-1 text-left">
+                      whatsApp: (11) 9 9988-9988
+                    </li>
+                    <li class="text-subtitle-1 text--darken-1">
+                      Endereço: Rua Esta <a> Rua </a> n*
+                    </li>
+                  </ul>
+                </div>
+              </v-col>
             </div>
           </div>
         </div>
@@ -207,7 +254,7 @@ export default {
   width: 100%;
   height: 100%;
 }
-#imgStyle{
+#imgStyle {
   width: 150px;
   height: 220px;
 }

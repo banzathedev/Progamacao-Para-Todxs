@@ -12,7 +12,7 @@
             mt-15
             elevation-2
           "
-          style="padding: 96px 0px; opacity: 0.8"
+          style="padding: 96px 0px"
         >
           <div class="text-center mb-12">
             <h1
@@ -46,7 +46,7 @@
               '#Código todXs - Mobile'
             </p>
           </div>
-          <div class="container">
+          <div name="lg display content " class="container d-none d-lg-block">
             <div class="row">
               <div class="col-md-6 col-12">
                 <div class="pt-2 mb-8 d-flex">
@@ -100,6 +100,53 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div name="md and sm display content " class="container d-lg-none">
+            <div class="row">
+              <v-col class="mr-10 ml-15" md="6" sm="3" xs="2">
+                <div class="pt-2 mb-8 d-flex">
+                  <div class="d-inline-flex mb-3 align-self-start">
+                    <div
+                      class="v-avatar white"
+                      style="
+                        height: 150px;
+                        min-width: 72px;
+                        width: 150px;
+                        opacity: 0.9;
+                      "
+                    >
+                      <img src="@/assets/author.jpg" objetc-fit />
+                    </div>
+                  </div>
+                </div>
+                <div class="ml-6">
+                  <h3
+                    class="
+                      text-uppercase text-h6
+                      font-weight-bold
+                      mb-3
+                      text-left
+                    "
+                  >
+                    Autor:
+                  </h3>
+                  <p
+                    class="
+                      text-body-1
+                      mx-auto
+                      black--text
+                      text--darken-1 text-left
+                      mb-0
+                    "
+                    style="max-width: 700px"
+                  >
+                    Giovanni Raposo Pinheiro, 23 anos.
+                  </p>
+                  <p>Programador front end Jr e estudante de programação</p>
+                </div>
+              </v-col>
             </div>
           </div>
         </div>
